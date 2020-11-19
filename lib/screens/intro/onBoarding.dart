@@ -1,6 +1,8 @@
+import 'package:blood_hub/models/AppUser.dart';
 import 'package:blood_hub/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_onboard/flutter_onboard.dart';
+import 'package:get/state_manager.dart';
 import 'package:provider/provider.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -10,7 +12,7 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final PageController _pageController = PageController();
-
+  AppUser currentUser = AppUser();
   @override
   Widget build(BuildContext context) {
     return Provider<OnBoardState>(
@@ -23,8 +25,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 .push(MaterialPageRoute(builder: (context) => Home()));
           },
           onDone: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Home()));
+            if (currentUser != null) {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Home()));
+            } else {}
           },
           onBoardData: onBoardData,
           titleStyles: TextStyle(

@@ -18,9 +18,9 @@ class UnitDropdown extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = ['Kisumu', 'Nairobi', 'Mombasa'];
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 8.0),
+      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 8.0),
       child: Container(
-        height: 50,
+        height: 46,
         width: MediaQueryData.fromWindow(WidgetsBinding.instance.window)
             .size
             .width,

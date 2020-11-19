@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "737261690788",
+    "firebase_url": "https://blood-hub-14a50.firebaseio.com",
+    "project_id": "blood-hub-14a50",
+    "storage_bucket": "blood-hub-14a50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737261690788:android:db9d94571bc69d81b02b31",
+        "android_client_info": {
+          "package_name": "com.kherld.blood_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737261690788-4po5huhgd5oitu61vufckmd4utrlbn4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0HQK4niUXnrugpjEwIk7TJg88CKUTgQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737261690788-4po5huhgd5oitu61vufckmd4utrlbn4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
